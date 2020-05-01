@@ -1,0 +1,23 @@
+{{singleComic.name}}
+
+<a href="/comic/{{singleComic._id}}/edit">
+    <button>
+        Edit
+    </button>
+</a>
+
+<div class="title">Address</div>
+{{singleComic.address}}
+
+<div class="title">Hours</div>
+{{singleComic.hours}}
+
+<div class="title">TP Stock</div>
+{{singleComic.tpStock}}
+
+<div class="title">Payments Accepted</div>
+{{singleComic.paymentTypes}}
+
+<form action="/comic/{{singleComic._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete">
+</form>

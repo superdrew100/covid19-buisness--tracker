@@ -1,0 +1,23 @@
+<h1>All Computers</h1>
+
+<a href="/computer/new">
+    <button>
+        Create Computer
+    </button>
+</a>
+
+{{#each allComputers}}
+<a href="/computer/{{_id}}">
+    <div class="computer-item">
+        {{name}}
+        <div class="title">Address</div>
+        {{address}}
+        <div class="title">Hours</div>
+        {{hours}}
+        <div class="title">TP Stock</div>
+        {{tpStock}}
+        <div class="title">Payments Accepted</div>
+        {{paymentTypes}}
+    </div>
+</a>
+{{/each}}

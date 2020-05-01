@@ -1,0 +1,23 @@
+<h1>All Facilities</h1>
+
+<a href="/facility/new">
+    <button>
+        Create Facility
+    </button>
+</a>
+
+{{#each allFacilities}}
+<a href="/facility/{{_id}}">
+    <div class="facility-item">
+        {{name}}
+        <div class="title">Address</div>
+        {{address}}
+        <div class="title">Hours</div>
+        {{hours}}
+        <div class="title">TP Stock</div>
+        {{tpStock}}
+        <div class="title">Payments Accepted</div>
+        {{paymentTypes}}
+    </div>
+</a>
+{{/each}}

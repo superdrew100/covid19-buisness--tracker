@@ -1,0 +1,23 @@
+<h1>All Comics</h1>
+
+<a href="/comic/new">
+    <button>
+        Create Comic
+    </button>
+</a>
+
+{{#each allComics}}
+<a href="/comic/{{_id}}">
+    <div class="comic-item">
+        {{name}}
+        <div class="title">Address</div>
+        {{address}}
+        <div class="title">Hours</div>
+        {{hours}}
+        <div class="title">TP Stock</div>
+        {{tpStock}}
+        <div class="title">Payments Accepted</div>
+        {{paymentTypes}}
+    </div>
+</a>
+{{/each}}

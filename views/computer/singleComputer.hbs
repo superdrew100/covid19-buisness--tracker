@@ -1,0 +1,23 @@
+{{singleComputer.name}}
+
+<a href="/computer/{{singleComputer._id}}/edit">
+    <button>
+        Edit
+    </button>
+</a>
+
+<div class="title">Address</div>
+{{singleComputer.address}}
+
+<div class="title">Hours</div>
+{{singleComputer.hours}}
+
+<div class="title">TP Stock</div>
+{{singleComputer.tpStock}}
+
+<div class="title">Payments Accepted</div>
+{{singleComputer.paymentTypes}}
+
+<form action="/computer/{{singleComputer._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete">
+</form>

@@ -1,0 +1,20 @@
+<h1>Edit Computer</h1>
+
+<form action="/computer/{{singleComputer._id}}?_method=PUT" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" value="{{singleComputer.name}}" />
+
+    <label>Address</label>
+    <input type="text" name="address" value="{{singleComputer.address}}" />
+
+    <label>Hours</label>
+    <input type=" text" name="hours" value="{{singleComputer.hours}}" />
+
+    <label>TP Stock</label>
+    <input type="number" min=0 max=4 name="tpStock" value="{{singleComputer.tpStock}}" />
+
+    <label>Accepted Payments</label>
+    <input type="text" name="paymentTypes" value="{{singleComputer.paymentTypes}}" />
+
+    <input type="submit" value="Save" />
+</form>
