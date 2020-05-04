@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const comicSchema = new Schema({
     name: String,
-    address: String,
+    Writer: String,
     hours: String,
     tpStock: Number,
     paymentTypes: String,
