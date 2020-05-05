@@ -3,10 +3,10 @@ const Schema = mongoose.Schema
 
 const computerSchema = new Schema({
     name: String,
-    address: String,
-    hours: String,
-    tpStock: Number,
-    paymentTypes: String,
+    modelNumber: String,
+    manufacturer: String,
+    version: Number,
+    storage: String,
 })
 
 const computerCollection = mongoose.model('computer', computerSchema)
