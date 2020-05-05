@@ -3,10 +3,10 @@ const Schema = mongoose.Schema
 
 const songSchema = new Schema({
     name: String,
-    address: String,
-    hours: String,
-    tpStock: Number,
-    paymentTypes: String,
+    album: String,
+    length: String,
+    songNumber: Number,
+    artist: String,
 })
 
 const songCollection = mongoose.model('song', songSchema)

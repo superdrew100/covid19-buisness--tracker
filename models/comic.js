@@ -4,9 +4,9 @@ const Schema = mongoose.Schema
 const comicSchema = new Schema({
     name: String,
     Writer: String,
-    hours: String,
+    artist: String,
     issueNumber: Number,
-    paymentTypes: String,
+    publisher: String,
 })
 
 const comicCollection = mongoose.model('comic', comicSchema)
