@@ -1,5 +1,5 @@
 const express = require('express')
-const facilityRouter = require('./controller/facility.js')
+const songRouter = require('./controller/song.js')
 const comicRouter = require('./controller/comic.js')
 const computerRouter = require('./controller/computer.js')
 const methodOverride = require('method-override')
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.json('ok')
 })
 
-app.use('/facility', facilityRouter)
+app.use('/song', songRouter)
 app.use('/comic', comicRouter)
 app.use('/computer', computerRouter)
 

@@ -15,12 +15,12 @@ comicRouter.get('/', (req, res) => {
         })
 })
 
-// CREATE NEW FACILITY FORM
+// CREATE NEW COMIC FORM
 comicRouter.get('/new', (req, res) => {
     res.render('comic/createComic')
 })
 
-// EDIT FACILITY FORM
+// EDIT COMIC FORM
 comicRouter.get('/:id/edit', (req, res) => {
      comicModel.getOneComic(req.params.id)
         .then((singleComic) => {

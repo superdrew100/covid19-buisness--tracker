@@ -5,7 +5,7 @@ const comicSchema = new Schema({
     name: String,
     Writer: String,
     hours: String,
-    tpStock: Number,
+    issueNumber: Number,
     paymentTypes: String,
 })
 
