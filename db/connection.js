@@ -1,10 +1,10 @@
-//const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 
-//const connectionString = process.env.MONGODB_URI || "mongodb://localhost/covid19-tracker";
+const connectionString = process.env.MONGODB_URI || "mongodb://localhost/covid19-tracker";
 
 
-//mongoose.connect(connectionString)
+mongoose.connect(connectionString)
 // Connect to database
 if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI);
@@ -28,4 +28,4 @@ if (process.env.MONGODB_URI) {
 //      console.log(err)
  //   })
 
-//module.exports = mongoose
+module.exports = mongoose
