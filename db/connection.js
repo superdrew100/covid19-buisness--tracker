@@ -16,7 +16,7 @@ if (process.env.MONGODB_URI) {
     console.error('MongoDB connection error: ' + err);
     process.exit(-1);
     }
-  ); 
+  );
   mongoose.connection.once('open', () => {
     console.log("Mongoose has connected to MongoDB!");
   }); 
