@@ -19,7 +19,7 @@ if (process.env.MONGODB_URI) {
   );
   mongoose.connection.once('open', () => {
     console.log("Mongoose has connected to MongoDB!");
-  });
+  }); 
  //   .then(() => {
  //       console.log('Connected to mongo successfully!')
  //   })
